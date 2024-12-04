@@ -1,0 +1,57 @@
+/* website-shared v1.1 */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: white;
+  background: theme('colors.darkest-blue');
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+  color: white;
+  background: theme('colors.dark-blue');
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+td, th {
+  text-wrap: wrap;
+  word-break: break-all;
+  padding: 1rem;
+}
+
+div {
+  background-color: theme('colors.dark-blue');
+}
+
+.header {
+  background-color: theme('colors.darkest-blue');
+}
+
+table {
+  background-color: theme('colors.light-blue');
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  text-wrap: nowrap;
+}
+
+a:hover {
+  color: grey
+}
