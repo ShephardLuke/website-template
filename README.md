@@ -1,2 +1,2 @@
 # website-shared
-Shared files for my website
+Shared files for my websites
