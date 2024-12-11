@@ -14,8 +14,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Website Shared",
-  description: "A demo of the shared files for all of my websites",
+  title: "Website Template",
+  description: "A template I use for creating my websites",
 };
 
 export default function RootLayout({
