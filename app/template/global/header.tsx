@@ -6,12 +6,16 @@ import { NavLink } from "../link/navLink";
 
 export default function Header({currentPage}: {currentPage?: string}) {
 
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const pk = require("../../../package.json");
+    const repo = pk.name;
+
     const MAIN_TITLE = "Website Template";
     
     const PAGES = [ // List of pages that will show on the nav bar. NavLink internal links, NameLink is for external links and will open in a new tab
         new NavLink("Home", "/"),
         new NavLink("Test Page"),
-        new NameLink("View on GitHub", "https://github.com/shephardluke/website-template"),
+        new NameLink("View on GitHub", "https://github.com/shephardluke/" + repo),
     ]
 
     const pageLinks = PAGES.map(page => { // Turns each element into a link, with the current page having linkStyle class
