@@ -12,7 +12,7 @@ export default function Footer() {
         <>
             <div className="text-center p-10 flex-col justify-center gap-4 bg-darkest-blue">
                 <p className="text-xl">{repo} v{pk.version}</p>
-                <p className="text-base footer">{releaseNotesLink}</p>
+                <p className="text-base">{releaseNotesLink}</p>
             </div>
         </>
     )

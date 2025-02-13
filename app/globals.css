@@ -42,7 +42,7 @@ div {
   padding: 2.5rem;
 }
 
-.header, .footer {
+.header {
   background-color: theme('colors.darkest-blue');
 }
 
