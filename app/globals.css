@@ -83,3 +83,16 @@ p a:hover, li a:hover, .linkStyle:hover, .linkStyle a:hover {
 p a:active, li a:active, .linkStyle:active, .linkStyle a:active { 
   color: #d97706; /* amber-600 */
 }
+
+.disabledLinkStyle, .disabledLinkStyle a {
+  color: #9ca3af; /* gray-400 */
+  text-decoration: underline;
+}
+
+.disabledLinkStyle:hover, .disabledLinkStyle a:hover {
+  color: #71717a;
+}
+
+.disabledLinkStyle:active, .disabledLinkStyle a:active {
+  color: #52525b;
+}

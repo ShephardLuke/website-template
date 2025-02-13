@@ -36,7 +36,8 @@ export default function Home() {
       <Header currentPage="Home"/>
       <div className="main">
         <h1>This is a template I use for creating my websites</h1>
-        <p>Link {new NameLink("example", "https://tic-tac-toe.shephardluke.co.uk").generateElement()}</p>
+        <p>{new NameLink("Link example", "https://tic-tac-toe.shephardluke.co.uk").generateElement()}</p>
+        <p>{new NameLink("Disabled link example", "https://tic-tac-toe.shephardluke.co.uk", false).generateElement()}</p>
         
         <div className="pt-5 pb-5 flex gap-4">
           <Button text={"Button"} clicked={() => {clickedButton("button")}}/>

@@ -23,9 +23,13 @@ export class NameLink {
 
     generateElement(): React.JSX.Element { // Returns as an a element if enabled or span if disabled, always opens link in new tab
         if (!this.enabled) {
-            return <span>(Disabled) {this.getLabel()}</span>
+            return <span className="disabledLinkStyle">{this.getLabel()}</span>
         }
         return <a key={this.getLabel()} href={this.getLink()} target="_blank">{this.getLabel()}</a>
+    }
+
+    setEnabled(enabled: boolean) {
+        this.enabled = enabled;
     }
 
     isEnabled() {
