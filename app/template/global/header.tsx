@@ -8,13 +8,13 @@ export default function Header({currentPage}: {currentPage?: string}) {
 
     const MAIN_TITLE = "Website Template";
     
-    const PAGES = [
+    const PAGES = [ // List of pages that will show on the nav bar. NavLink internal links, NameLink is for external links and will open in a new tab
         new NavLink("Home", "/"),
         new NavLink("Test Page"),
         new NameLink("View on GitHub", "https://github.com/shephardluke/website-template"),
     ]
 
-    const pageLinks = PAGES.map(page => {
+    const pageLinks = PAGES.map(page => { // Turns each element into a link, with the current page having linkStyle class
         const label = page.getLabel();
         if (currentPage == label) {
             return <div key={"currentPage"} className="underline header linkStyle">{page.generateElement()}</div>
