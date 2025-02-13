@@ -1,4 +1,4 @@
-/* website-template v1.2 */
+/* website-template v1.3 */
 
 @tailwind base;
 @tailwind components;
@@ -42,7 +42,7 @@ div {
   padding: 2.5rem;
 }
 
-.header {
+.header, .footer {
   background-color: theme('colors.darkest-blue');
 }
 
@@ -71,16 +71,15 @@ h1 {
   padding-bottom: 2.5rem;
 }
 
-p a {
+p a, li a, .linkStyle, .linkStyle a {
   color: #fbbf24; /* amber-400 */
   text-decoration: underline;
 }
 
-p a:hover {
+p a:hover, li a:hover, .linkStyle:hover, .linkStyle a:hover {
   color: #f59e0b; /* amber-500 */
 }
 
-p a:active { 
+p a:active, li a:active, .linkStyle:active, .linkStyle a:active { 
   color: #d97706; /* amber-600 */
 }
-
