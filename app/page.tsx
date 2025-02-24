@@ -49,7 +49,7 @@ export default function Home() {
           <span className="font-bold hidden md:inline-block lg:hidden"> medium </span>
           <span className="font-bold hidden lg:inline-block xl:hidden"> large </span>
           <span className="font-bold hidden xl:inline-block 2xl:hidden"> extra large </span>
-          <span className="font-bold hidden 2xl:inline-block"> 2x extra large </span>
+          <span className="font-bold hidden 2xl:inline-block"> extra extra large </span>
           responsive design category.</p>
         </div>
         <br/>
