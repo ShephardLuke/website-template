@@ -11,7 +11,7 @@ export default function Page() {
     return (
         <>
             <Header currentPage="Test Page"/>
-            <div className="main">
+            <div className="main overflow-hidden">
                 <h1>Test Page</h1>
                 {easteregg ?
                     <div className="border-2">
