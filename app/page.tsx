@@ -44,7 +44,7 @@ export default function Home() {
   
         <div className="whitespace-pre text-wrap">
           <p>Your device is in the
-          <span className="font-bold sm:hidden"> very small </span>
+          <span className="font-bold sm:hidden"> extra small </span>
           <span className="font-bold hidden sm:inline-block md:hidden"> small </span>
           <span className="font-bold hidden md:inline-block lg:hidden"> medium </span>
           <span className="font-bold hidden lg:inline-block xl:hidden"> large </span>
