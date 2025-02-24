@@ -1,4 +1,4 @@
-// website-template v1.2
+// website-template v2.0.0
 
 import { ReactNode } from "react"
 import Button from "./button"

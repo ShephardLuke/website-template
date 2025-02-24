@@ -1,4 +1,4 @@
-// website-template v1.3
+// website-template v2.0.0
 
 import Link from "next/link";
 import { NameLink } from "../link/nameLink";
