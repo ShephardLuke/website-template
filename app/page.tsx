@@ -57,7 +57,7 @@ export default function Home() {
         <p>{new NameLink("Link example", "https://tic-tac-toe.shephardluke.co.uk").generateElement()}</p>
         <p>{new NameLink("Disabled link example", "https://tic-tac-toe.shephardluke.co.uk", false).generateElement()}</p>
         
-        <div className="pt-5 pb-5 flex flex-col  space-y-5 md:flex-row md:space-y-0 md:space-x-5 ">
+        <div className="pt-5 pb-5 flex flex-col space-y-5 sm:flex-row sm:space-y-0 sm:space-x-5 ">
           <Button className="w-max" text={"Button"} clicked={() => {clickedButton("button")}}/>
           <SubmitButton className="w-max" text={"Submit Button"} clicked={() => {clickedButton("submit button")}}/>
           <WarningButton className="w-max" text={"Warning Button"} clicked={() => {clickedButton("warning button")}}/>
