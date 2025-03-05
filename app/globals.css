@@ -56,11 +56,16 @@ button {
   text-wrap: nowrap;
 }
 
-a:hover {
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+header a:hover {
   color: #a3a3a3 /* neutral-400 */
 }
 
-a:active { 
+header a:active { 
   color: #525252; /* neutral-600 */
 }
 
@@ -71,16 +76,16 @@ h1 {
   padding-bottom: 2.5rem;
 }
 
-p a, li a, .linkStyle, .linkStyle a {
+a, .linkStyle a {
   color: #fbbf24; /* amber-400 */
   text-decoration: underline;
 }
 
-p a:hover, li a:hover, .linkStyle:hover, .linkStyle a:hover {
+a:hover, .linkStyle a:hover {
   color: #f59e0b; /* amber-500 */
 }
 
-p a:active, li a:active, .linkStyle:active, .linkStyle a:active { 
+a:active, .linkStyle a:active { 
   color: #d97706; /* amber-600 */
 }
 
@@ -95,4 +100,36 @@ p a:active, li a:active, .linkStyle:active, .linkStyle a:active {
 
 .disabledLinkStyle:active, .disabledLinkStyle a:active {
   color: #52525b;
+}
+
+li {
+  list-style-type: square;
+  list-style-position: inside;
+}
+
+header li {
+  list-style-type: none;
+  list-style-position: outside;
+}
+
+select {
+  background-color: #1d4ed8;
+  padding: 0.1rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+select:hover {
+  background-color: #1e40af;
+  transform: scale(1.1);
+}
+
+select:active {
+  background-color: #1e3a8a;
+}
+
+h2 {
+  font-size: 1.75rem;
+  line-height: 2rem;
+  text-decoration: underline;
+  padding-bottom: 1.5rem;
 }

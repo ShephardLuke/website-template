@@ -7,6 +7,8 @@ import WarningButton from "./template/buttons/warningButton";
 import Footer from "./template/global/footer";
 import Header from "./template/global/header";
 import { NameLink } from "./template/link/nameLink";
+import InteractiveElement from "./template/global/interactiveElement";
+import interactiveClass from "./template/utils/interactiveElement";
 
 export default function Home() {
 
@@ -38,7 +40,7 @@ export default function Home() {
     <>
       <Header currentPage="Home"/>
       <div className="main">
-        <h1>Website Template</h1>
+        <h1>Home</h1>
         <p>This is a template I use for creating my websites.</p>
         <br/>
   
@@ -63,6 +65,15 @@ export default function Home() {
           <WarningButton className="w-max" text={"Warning Button"} clicked={() => {clickedButton("warning button")}}/>
         </div>
         {feedbackMessage}
+  
+        <div className="pt-5">
+          <label htmlFor="testSelect">Test Select: </label>
+          <select name="" id="testSelect">
+            <option value="">Test</option>
+            <option value="">Another Test</option>
+          </select>
+        </div>
+
       </div>
       <Footer/>
     </>

@@ -1,6 +1,7 @@
 // website-template v1.3
 
 import React from "react";
+import interactiveClass from "../utils/interactiveElement";
 
 export class NameLink {
     private label: string;
@@ -25,7 +26,7 @@ export class NameLink {
         if (!this.enabled) {
             return <span className="disabledLinkStyle">{this.getLabel()}</span>
         }
-        return <a key={this.getLabel()} href={this.getLink()} target="_blank">{this.getLabel()}</a>
+        return <a className={interactiveClass()} key={this.getLabel()} href={this.getLink()} target="_blank">{this.getLabel()}</a>
     }
 
     setEnabled(enabled: boolean) {
